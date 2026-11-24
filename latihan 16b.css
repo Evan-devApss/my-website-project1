@@ -1,0 +1,372 @@
+
+/* =========================
+   RESET CSS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background-color: #0b1428;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* =========================
+   JUMBOTRON
+========================= */
+
+.jumbotron {
+    background: linear-gradient(
+        135deg,
+        #004d98,
+        #a50044,
+        #071b49
+    );
+
+    padding: 55px 20px;
+    text-align: center;
+    color: white;
+}
+
+.jumbotron img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.jumbotron h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+    color: #eeeeee;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #071b49;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    display: flex;
+    gap: 25px;
+    max-width: 1250px;
+    margin: 30px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+#content {
+    flex: 3;
+    min-width: 0;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background: linear-gradient(
+        145deg,
+        #142b50,
+        #301b3d
+    );
+
+    padding: 25px;
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    color: #ffcc00;
+    font-size: 24px;
+    margin-bottom: 18px;
+
+    border-left: 5px solid #a50044;
+    padding-left: 12px;
+}
+
+.card h3 {
+    color: #ffcc00;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #e5e5e5;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.featured-image {
+    display: block;
+
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   MOTTO
+========================= */
+
+.motto {
+    color: #ffcc00 !important;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center !important;
+    font-style: italic;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+    flex: 1;
+    min-width: 230px;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile h2 {
+    text-align: left;
+}
+
+.profile-subtitle {
+    color: #ffcc00 !important;
+    font-weight: bold;
+}
+
+.profile figure {
+    margin: 20px 0;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 4px solid #ffcc00;
+}
+
+.profile figcaption {
+    color: #cccccc;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.profile-info {
+    background-color: rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.profile-info p {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #071b49;
+    border-top: 4px solid #a50044;
+    padding: 25px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-content p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffcc00;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    #content {
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+    }
+
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media screen and (max-width: 600px) {
+
+    .jumbotron {
+        padding: 35px 15px;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px;
+    }
+
+    .jumbotron p {
+        font-size: 13px;
+    }
+
+    .navbar {
+        padding: 12px 5px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .container {
+        padding: 0 12px;
+        margin: 20px auto;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .featured-image {
+        height: 220px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
